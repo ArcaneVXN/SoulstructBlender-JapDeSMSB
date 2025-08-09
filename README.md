@@ -7,7 +7,9 @@
 This repository contains **patched Soulstruct Python modules** for Blender that fix crashes when importing **Demon’s Souls (Japanese version)** map pieces and objects.
 
 **Fixes include:**
-- 🛠 Resolved `BinaryFieldValueError` in **BND3/BHF3** headers (`_pad2` padding mismatch).
+- 🛠 Resolved `BinaryFieldValueError` in **BND3/BHF3** headers (`_pad2` padding mismatch).BinaryFieldValueError _pad2
+  
+
 - ✅ Allows **MSB object** imports without crashing Blender.
 - 🔄 Fully compatible with **map piece** imports.
 
