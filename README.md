@@ -1,6 +1,18 @@
 # Soulstruct Blender – Demon’s Souls JP (MSB Import Patch)
 
 <img width="3130" height="1986" alt="image" src="https://github.com/user-attachments/assets/31e6d98c-52c8-43a3-bd61-1bd891a2d17e" />
+Why this fork exists
+Most tools marked Demon’s Souls (JP) compatible because loose FLVER imports worked.
+But MSB → Objects crashed on the BND3 header due to a strict padding assert:
+
+Verified
+Game: Demon’s Souls (JP)
+
+Map pieces: ✅ imports
+
+MSB objects: ✅ import + placement
+
+Scale: 1:1 (no rescale on import)
 
 
 ## 📜 Overview
