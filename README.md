@@ -34,9 +34,7 @@ Depending on your OS, navigate to:
 **Windows:**
 %APPDATA%\Blender Foundation\Blender\4.5\scripts\addons\io_soulstruct_lib\
 
-makefile
-Copy
-Edit
+
 
 **macOS:**
 ~/Library/Application Support/Blender/4.5/scripts/addons/io_soulstruct_lib/
@@ -48,18 +46,14 @@ Edit
 **Linux:**
 ~/.config/blender/4.5/scripts/addons/io_soulstruct_lib/
 
-markdown
-Copy
-Edit
+
 
 ### 3️⃣ Backup Existing Files
 Inside `io_soulstruct_lib/soulstruct/`, **backup**:
 containers/
 msb/
 
-yaml
-Copy
-Edit
+
 
 ### 4️⃣ Install the Patch
 - Extract `containers.zip` → overwrite the `containers/` folder.
