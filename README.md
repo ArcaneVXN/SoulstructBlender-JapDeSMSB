@@ -1,3 +1,127 @@
+# Soulstruct Blender – Demon’s Souls JP (MSB Import Patch)
+
+<img width="3130" height="1986" alt="image" src="https://github.com/user-attachments/assets/31e6d98c-52c8-43a3-bd61-1bd891a2d17e" />
+
+
+## 📜 Overview
+This repository contains **patched Soulstruct Python modules** for Blender that fix crashes when importing **Demon’s Souls (Japanese version)** map pieces and objects.
+
+**Fixes include:**
+- 🛠 Resolved `BinaryFieldValueError` in **BND3/BHF3** headers (`_pad2` padding mismatch).
+- ✅ Allows **MSB object** imports without crashing Blender.
+- 🔄 Fully compatible with **map piece** imports.
+
+These patches make Soulstruct work with the Demon’s Souls JP release without modifying game assets.
+
+---
+
+## 📂 Contents
+- **`containers.zip`** — Updated `soulstruct/containers/` module with relaxed header padding validation.
+- **`msb.zip`** — Updated `soulstruct/msb/` module to handle Demon’s Souls JP object data.
+
+---
+
+## 🛠 Installation
+
+### 1️⃣ Close Blender
+Make sure Blender is fully closed before replacing any files.
+
+### 2️⃣ Locate the Soulstruct Add-on Folder
+Depending on your OS, navigate to:
+
+**Windows:**
+%APPDATA%\Blender Foundation\Blender\4.5\scripts\addons\io_soulstruct_lib\
+
+makefile
+Copy
+Edit
+
+**macOS:**
+~/Library/Application Support/Blender/4.5/scripts/addons/io_soulstruct_lib/
+
+makefile
+Copy
+Edit
+
+**Linux:**
+~/.config/blender/4.5/scripts/addons/io_soulstruct_lib/
+
+markdown
+Copy
+Edit
+
+### 3️⃣ Backup Existing Files
+Inside `io_soulstruct_lib/soulstruct/`, **backup**:
+containers/
+msb/
+
+yaml
+Copy
+Edit
+
+### 4️⃣ Install the Patch
+- Extract `containers.zip` → overwrite the `containers/` folder.
+- Extract `msb.zip` → overwrite the `msb/` folder.
+
+### 5️⃣ Restart Blender
+You can also disable/re-enable the Soulstruct add-on to reload changes.
+
+---
+
+## 🕹 Usage
+1. In Blender’s **Soulstruct Import** panel:
+   - **Game** → *Demon’s Souls*
+   - **Game Root** → your extracted Demon’s Souls game directory
+2. Import:
+   - **Map Pieces** → works without errors ✅
+   - **Objects** → works without `_pad2` assertion error ✅
+
+---
+
+## ⚠ Notes
+- These patches do **not** contain any game files — only Python code for the Blender add-on.
+- Compatible with **Blender 4.5** and latest Soulstruct build at time of patch.
+- Intended for **Demon’s Souls JP** file formats; other game versions may not need this patch.
+
+---
+
+## 📜 License
+These changes are provided **as-is** for educational and modding purposes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Soulstruct for Blender
 
 This Blender add-on enables you to import and export a large number of different FromSoftware file formats.
