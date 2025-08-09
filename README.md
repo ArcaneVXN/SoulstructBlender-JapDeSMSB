@@ -39,9 +39,7 @@ Depending on your OS, navigate to:
 **macOS:**
 ~/Library/Application Support/Blender/4.5/scripts/addons/io_soulstruct_lib/
 
-makefile
-Copy
-Edit
+
 
 **Linux:**
 ~/.config/blender/4.5/scripts/addons/io_soulstruct_lib/
